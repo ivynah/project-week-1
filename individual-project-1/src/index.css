@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 body {
-    background-image: linear-gradient(120deg, #97ffff, #65ace6, #1395ff);
+    background-image: url(https://wallpaperaccess.com/full/1717005.jpg);
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     
-}
+} 
 header {
-    font-size: 15px;
-    padding-top: 10vh;
+    font-size: 20px;
 }
+
 header,
 form {
     min-height: 20vh;
@@ -20,23 +20,71 @@ form {
     justify-content: center;
     align-items: center;
 }
-
-
 form input,
 form button {
-    padding: 8px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
     border: none;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #1395ff;
+    border-radius: 20px;
 }
 form button {
-    color: #000000;
+    color: #1395ff;
     background-color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 form button:hover {
     color: #ffffff;
-    background-color: #000000;
+    background-color: #1395ff;
 }
-
+.container {
+    display: grid;
+    justify-content: center;
+    max-width: 40vw;
+    background-color: #292727;
+    
+}
+.taskContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.taskList {
+    min-width: 25%;
+    list-style: none;
+}
+.task {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.task li {
+    flex: 1;
+}
+.trashBtn,
+.checkedBtn {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.trashBtn {
+    color: red;
+}
+.fa-trash-can, .fa-circle-check {
+    pointer-events: none;
+}
