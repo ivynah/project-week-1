@@ -75,8 +75,13 @@ form button:hover {
     color: #ff0000;
 }
 .checkedBtn {
-    color: #04eb04;
+    color: white;
 }
 .fa-trash-can, .fa-circle-check {
     pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #b8b8b8;
 }

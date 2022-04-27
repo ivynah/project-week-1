@@ -41,6 +41,12 @@ function deleteTask(e) {
         const task = item.parentElement;
         task.remove();
     }
+    if (item.classList[0] === "checkedBtn") {
+        const task = item.parentElement;
+        task.classList.toggle("completed");
+    }
 }
+
+
 
 
