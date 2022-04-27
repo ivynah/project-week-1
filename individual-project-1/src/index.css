@@ -7,12 +7,10 @@ body {
     background-image: url(https://wallpaperaccess.com/full/1717005.jpg);
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    
 } 
 header {
-    font-size: 20px;
+    font-size: 16px;
 }
-
 header,
 form {
     min-height: 20vh;
@@ -23,31 +21,23 @@ form {
 form input,
 form button {
     padding: 10px;
-    margin: 10px;
-    font-size: 20px;
+    margin: 5px;
+    font-size: 18px;
     border: none;
-    background-color: #ffffff;
+    background-color: #000000;
     color: #1395ff;
-    border-radius: 20px;
 }
 form button {
     color: #1395ff;
-    background-color: #ffffff;
+    background-color: #000000;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 form button:hover {
-    color: #ffffff;
-    background-color: #1395ff;
+    color: #1395ff;
+    background-color: #ffffff;
 }
 .container {
-    display: grid;
-    justify-content: center;
-    max-width: 40vw;
-    background-color: #292727;
-    
-}
-.taskContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,22 +46,21 @@ form button:hover {
     min-width: 25%;
     list-style: none;
 }
-.task {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 17px;
-    font-weight: bold;
+.task{
     margin: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background-color: #ffffff;
-    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .task li {
     flex: 1;
+}
+.task-item {
+    padding: 10px;
 }
 .trashBtn,
 .checkedBtn {
@@ -83,7 +72,10 @@ form button:hover {
     font-size: 15px;
 }
 .trashBtn {
-    color: red;
+    color: #ff0000;
+}
+.checkedBtn {
+    color: #04eb04;
 }
 .fa-trash-can, .fa-circle-check {
     pointer-events: none;

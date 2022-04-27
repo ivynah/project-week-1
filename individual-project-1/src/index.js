@@ -38,7 +38,8 @@ function deleteTask(e) {
     const item = e.target;
     if(item.classList[0]==='trashBtn') {
         //console.log(e.target);
-        item.remove();
+        const task = item.parentElement;
+        task.remove();
     }
 }
 
