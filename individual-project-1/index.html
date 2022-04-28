@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script defer src="./src/index.js"></script>
@@ -12,6 +12,11 @@
     <header>
         <h1>Make Your Own Todo List</h1>
     </header>
+<div class="inputCount">
+        <span id="currentTasks"></span>
+        <span id="separator"></span>
+        <span id="completedTasks"></span>
+</div>
     <form>
         <input type="text" class="newTaskInput" placeholder="New task">
         <button type="submit" class="addTaskBtn">

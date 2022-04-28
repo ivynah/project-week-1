@@ -4,15 +4,25 @@ const newTaskInput = document.querySelector(".newTaskInput");
 const addTaskBtn = document.querySelector(".addTaskBtn");
 const taskList = document.querySelector(".taskList");
 
+
 addTaskBtn.addEventListener("click", addTask);
 taskList.addEventListener("click", deleteTask);
+
+
+let newTaskInputClicks = 0;
+let deleteClicks = 0;
 
 
 function addTask(event) {
     event.preventDefault();
     if(newTaskInput.value.trim() === "") {
-        return;}
-    
+        newTaskInputClicks == 0;
+        return;
+    } else{
+        currentTasks = newTaskInputClicks += 1;
+        console.log("Current tasks: ", currentTasks);
+    }
+
     const taskDiv = document.createElement("div");
     taskDiv.classList.add("task");
 
@@ -36,13 +46,14 @@ function addTask(event) {
     newTaskInput.value="";
 }
 
-
-
 function deleteTask(e) {
     const item = e.target;
     if(item.classList[0]==='trashBtn') {
-        //console.log(e.target);
         const task = item.parentElement;
+        deleteClicks += 1;
+        currentTasks = newTaskInputClicks -= 1;
+        //console.log("Deleted tasks: ", deleteClicks);
+        console.log("Current tasks: ", currentTasks);
         task.remove();
     }
     if (item.classList[0] === "checkedBtn") {
@@ -50,7 +61,3 @@ function deleteTask(e) {
         task.classList.toggle("completed");
     }
 }
-
-
-
-
