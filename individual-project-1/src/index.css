@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(https://wallpaperaccess.com/full/1717005.jpg);
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    background-image: url(https://wallpaperaccess.com/full/1302869.jpg);
+    font-family: 'Raleway', sans-serif;    
 } 
 header {
     font-size: 16px;
+    color: #ffffff;
+    margin-top: 50px;
 }
 header,
 form {
-    min-height: 20vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,16 +26,15 @@ form button {
     font-size: 18px;
     border: none;
     background-color: #000000;
-    color: #1395ff;
+    color: #64ff6b;
 }
 form button {
-    color: #1395ff;
     background-color: #000000;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 form button:hover {
-    color: #1395ff;
+    color: #64ff6b;
     background-color: #ffffff;
 }
 .container {
@@ -42,8 +42,15 @@ form button:hover {
     justify-content: center;
     align-items: center;
 }
+input[type="text"] {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #64ff6b;
+    
+  }
 .taskList {
-    min-width: 25%;
+    min-width: 65%;
+    max-width: 80%;
     list-style: none;
 }
 .task{
@@ -55,8 +62,9 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
 }
-.task li {
+.task list {
     flex: 1;
 }
 .task-item {
@@ -80,8 +88,31 @@ form button:hover {
 .fa-trash-can, .fa-circle-check {
     pointer-events: none;
 }
-
 .completed {
     text-decoration: line-through;
     color: #b8b8b8;
+    opacity: 30%;
+}
+.bigContainer {
+    position: absolute;
+    height: 75%;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: #000000b0;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: #00000059 0px 5px 15px;
+    border-radius: 10px;
+} ::-webkit-scrollbar {
+    width: 5px;
+} ::-webkit-scrollbar-track {
+    background: transparent; 
+} ::-webkit-scrollbar-thumb {
+    background: #888;
+} ::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
