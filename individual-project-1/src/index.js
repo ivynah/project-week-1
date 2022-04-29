@@ -9,7 +9,6 @@ addTaskBtn.addEventListener("click", addTask);
 taskList.addEventListener("click", deleteTask);
 
 let newTaskInputClicks = 0;
-let deleteClicks = 0;
 
 function addTask(event) {
     event.preventDefault();
@@ -48,9 +47,7 @@ function deleteTask(e) {
     const item = e.target;
     if(item.classList[0]==='trashBtn') {
         const task = item.parentElement;
-        deleteClicks += 1;
         currentTasks = newTaskInputClicks -= 1;
-        //console.log("Deleted tasks: ", deleteClicks);
         console.log("Current tasks: ", currentTasks);
         task.remove();
     }
@@ -59,4 +56,3 @@ function deleteTask(e) {
         task.classList.toggle("completed");
     }
 }
-
