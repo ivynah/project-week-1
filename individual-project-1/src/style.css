@@ -46,7 +46,6 @@ input[type="text"] {
     border: 0;
     outline: 0;
     border-bottom: 1px solid #64ff6b;
-    
   }
 .taskList {
     min-width: 65%;
@@ -54,7 +53,7 @@ input[type="text"] {
     list-style: none;
 }
 .task{
-    margin: 5px;
+    margin: 3px;
     background-color: #000000;
     color: #ffffff;
     font-weight: bold;
@@ -66,6 +65,10 @@ input[type="text"] {
 }
 .task list {
     flex: 1;
+}
+.taskList {
+    display: flex;
+    flex-direction: column-reverse;
 }
 .task-item {
     padding: 10px;

@@ -8,10 +8,8 @@ const taskList = document.querySelector(".taskList");
 addTaskBtn.addEventListener("click", addTask);
 taskList.addEventListener("click", deleteTask);
 
-
 let newTaskInputClicks = 0;
 let deleteClicks = 0;
-
 
 function addTask(event) {
     event.preventDefault();
@@ -61,3 +59,4 @@ function deleteTask(e) {
         task.classList.toggle("completed");
     }
 }
+
